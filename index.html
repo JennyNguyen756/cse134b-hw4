@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Jenny Nguyen">
+        <title>Jenny Nguyen's Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-happy.png">
+        <style>
+            .myName {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="myName">
+            <h1>Jenny Nguyen</h1>
+        </div>
+        </header>
+    <nav>
+        <a href="#aboutMe">About Me</a>
+        <a href="professional.html">Professional</a>
+        <a href="personal.html">Personal</a>
+    </nav>
+
+    <hr>
+
+    <main>
+    <section>
+        <div>
+        <h2 id ="aboutMe"><strong>About Me</strong></h2>
+        <picture>
+            <source media="(min-width:650px)" srcset="images/JennyNguyen.jpg">
+            <img src="images/genuinepfp.jpg" alt="my profile picture">
+        </picture>
+        <p>If you keep reading, you will learn more about my professional and personal life. 
+            <br> Are ya ready?
+        <br> Well here's a list of some things you'll see. </p>
+        <ul>
+            <li>Work</li>
+            <li>Games</li>
+            <li>Food</li>
+        </ul>
+        <p>Since you made it this far.</p>
+        <figure>
+            <img src="images/cute-puppy.jpg" style="width:50%">
+            <figcaption>Here is a <em>cute</em> puppy.</figcaption>
+        </figure>
+    </div>
+    </section>
+    
+    <hr>
+
+    <section>
+        <h2>Learn More</h2>
+        <form action="/action_page.php">
+            <label for="learn_more">Choose a section</label>
+            <select name="tab" id="tab">
+              <optgroup label="Professional">
+                <option value="resume">Resume</option>
+                <option value="skills">Skills</option>
+                <option value="linkedIn">LinkedIn</option>
+              </optgroup>
+              <optgroup label="Personal">
+                <option value="streaming">Streaming</option>
+                <option value="food">Food</option>
+              </optgroup>
+            </select>
+            <br><br>
+            <input id="learn_more">
+            <input type="submit" value="Submit">
+          </form>
+          <p>Or, if you would prefer to swap pages, choose one below:</p>
+          <button type="button">Professional</button>
+          <button type="button">Personal</button>
+    </section>
+
+    <hr>
+
+    <section>
+    <h2>Contact Me</h2>
+    <p>Select what you want to talk about.</p>
+    <form action="/action_page.php" method="get">
+        <fieldset>
+         <legend>Contact Info</legend>
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br><br>
+         <label for="ice_cream">Choose your favorite ice cream from the list (most important info tbh):</label>
+        <input list="ice_creams" name="ice_cream" id="ice_cream">
+        <datalist id="ice_creams">
+            <option value="Vanilla">
+            <option value="Chocolate">
+            <option value="Mint">
+        </datalist>
+        <br>
+        <textarea id="form_body" name="form_body" rows="4" cols="50">Say what you want here.</textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </fieldset>
+
+    </form>
+    </section>
+</main>
+
+<hr>
+
+<section>
+    <h3>This is a experiment section. This will be pruned later on. </h3>
+    <pre>This
+        is
+        me
+        testing the pre html tag.
+    </pre>
+
+    <p>Here is a car sound I was using in an edit.</p>
+    <audio controls>
+        <source src="audios/fast-car.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.</audio>
+
+    <p>I'm going to test template here.</p>
+    <template><h2>template IS AWESOME! but I can't use javascript yet.</h2></template>
+
+    <p>showing script and canvas tags here. Look, I made an aqua square!</p>
+    <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.fillStyle = "#00FFFF";
+    ctx.fillRect(0, 0, 50, 50);
+    </script>
+
+    <p>here is the svg part with inline
+    <svg viewBox="0 0 100 10">
+        <rect x="0" y="0" width="5" height="5" style="fill:#ECC5FB" />
+        </svg>
+    As you can see we can continue typing here.</p>
+</section>
+
+<hr>
+
+    <footer>Author: Jenny Nguyen</footer>
+    </body>
+</html>
