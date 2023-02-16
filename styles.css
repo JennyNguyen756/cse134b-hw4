@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
+/* Nav bar */
+nav {
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color:blue;
+}
+
+/* About Me Section */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 8px;
+}
+
+.about-img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+}
+
+.about-text h2{
+    line-height: 1;
+}
+
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p{
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+/* Learn More Section */
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.btn{
+    display: grid;
+    grid-column: 2; /*need help here */
+    font-size: 17px;
+    font-weight: 500;
+    width: 190px;
+    transition: all .40s ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 18px;
+    background: #8ecae6;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+
+/* Contact Me Section */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.contact-text h2 {
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+} 
+
+.contact-icons i{
+    height: 40px;
+    width: 40px;
+    background: #12141c;
+    border-radius: 0.5rem;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 18px;
+    background: #8ecae6;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+
+.contact-form form .send{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    width: 190px;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
