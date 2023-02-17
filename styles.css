@@ -269,5 +269,31 @@ footer{
 
 /* For Big Screens */
 @media only screen and (min-width: 992px){
+.section {
+    max-width:100%;
+    height:auto;
+}
+
+    .about-img {
+        width: 20%;
+        justify-content: right;
+    }
+
+    .professional-img{
+        width: 20%;
+        justify-content: right;
+    }
+
     
+    .personal-img{
+        width: 20%;
+        justify-content: right;
+    }
+
+    .container{
+        display: grid;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
