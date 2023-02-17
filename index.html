@@ -3,8 +3,11 @@
     <head>
         <meta name="author" content="Jenny Nguyen">
         <title>Jenny Nguyen's Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="images/favicon-happy.png">
+        <link rel="icon" type="image/x-icon" href="images/favicon-happy (1).png">
         <link rel="stylesheet" href="styles.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+          </style>
     </head>
 
     <body>
@@ -13,9 +16,10 @@
         <nav>
             <h1>Jenny Nguyen</h1>
             <ul>
-                <li><a href="#aboutMe">About Me</a></li>
-                <li><a href="professional.html">Professional</a></li>
-                <li><a href="personal.html">Personal</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#professional">Professional</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -24,44 +28,78 @@
         <!-- About Me Section-->
 
     <main>
-    <section class="about" id="about">
-        <picture class = "about-img">
-            <source media="(min-width:650px)" srcset="images/JennyNguyen.jpg">
-            <img src="images/genuinepfp.jpg" alt="my profile picture">
+    <section id="about">
+        <div class="container">
+        <picture class = "about-left-col">
+            <img class="about-img" src="images/JennyNguyen.jpg" alt="Picture of Jenny Nguyen">
         </picture>
-        <div class="about-text">
-            <h2>About Me</h2>
-            <h4>Project Manager by day - Gamer by night </h4>
+        <div class="about-right-col">
+            <h2 class = "about-me-heading">About Me</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
                 nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
                 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
                 in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <!-- <figure>
-            <img src="images/cute-puppy.jpg" style="width:50%">
-            <figcaption>Here is a <em>cute</em> puppy.</figcaption>
-        </figure> -->
+    </div>
     </section>
     
     <hr>
 
-        <!-- Learn More Section-->
-    <section>
-        <h2>Learn More</h2>
-    <img src="images/Jenny_Nguyen_Headshot.jpg" alt="Jenny's headshot">
-    <a href="professional.html" class = "btn">Professional</a>
-    <img src="images/genuinepfp.jpg" alt="Jenny's gamer profile picture">
-    <a href="personal.html" class = "btn">Personal</a>
+        <!-- Professional Section-->
+        <section id="professional">
+            <div class="container">
+            <div class="professional-left-col">
+                <h2 class = "professional-heading">Professional Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                    in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="https://drive.google.com/file/d/1dEx67NXlh9ROsJNaRH63wmkTwnOOfwLS/view?usp=sharing" class="resumeButton">Resume</a>
+            </div>
+            <picture class = "professional-right-col">
+                <img class="professional-img" src="images/Jenny_Nguyen_Headshot (1).jpg" alt="Headshot of Jenny Nguyen">
+            </picture>
+        </div>
+        </section>
 
-    </section>
 
+    </section> 
     <hr>
 
+    <section id="personal">
+        <div class="container">
+        <picture class = "personal-left-col">
+            <img class="personal-img" src="images/genuinepfp.jpg" alt="genuine756 profile picture">
+        </picture>
+        <div class="personal-right-col">
+            <h2 class = "personal-heading">Personal Life</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    </section>
+
+<!-- <section class="personal" id="personal">
+    <h2>Personal</h2>
+    <img src="images/genuinepfp.jpg" alt="Jenny's gamer profile picture">
+    Tiktok, Youtube, Twitch, Twitter
+</section>
+-->
+
+<hr>
+
 <!-- Contact Me Section-->
-    <section class ="contact" id="contact">
-        <div class ="contact-text">
-            <h2>Contact Me</h2>
+    <section id="contact">
+        <div class="container">
+        <div class ="contact-left">
+            <h2 class="contact-heading">Contact Me</h2>
+            <p>genuine756business@gmail.com</p>
+            <a href="linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
         <div class="contact-icon"></div>
         <!-- fix this or get rid of it -->
