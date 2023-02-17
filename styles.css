@@ -16,12 +16,30 @@
 
 body{
     background-color: var(--bg-color);
+    animation: change-background 4s ease ;
+
 
 }
 
 .main{
     display: flex;
     background-color: var(--bg-color);
+}
+
+@keyframes change-color {
+    0% {
+      color: #f72585;
+    }
+    50% {
+      color: #b5179e;
+    }
+    100% {
+      color: #7209b7;
+    }
+  }
+
+h1{
+    animation: change-color 4s ease;
 }
 
 /* Nav Bar Section */
@@ -37,9 +55,11 @@ nav {
     color: var(--text-color);
 }
 
+
 .h1 {
     width: 140px;
     color: var(--text-color);
+
 }
 
 nav ul li {
